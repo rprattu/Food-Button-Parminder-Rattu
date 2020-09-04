@@ -10,11 +10,20 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var messageLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func showmessagePressed(_ sender: UIButton) {
+        messageLabel.text = "🍕 Price:$19.99"
+    }
+    
+    
+    @IBAction func showAnothermessagePressed(_ sender: UIButton) {
+        messageLabel.text = "🍔 Price:$15.99"
+    }
+    
 }
 
